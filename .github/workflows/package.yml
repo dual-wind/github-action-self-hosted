@@ -11,14 +11,6 @@ on:
       - completed
 
 jobs:
-  build:
-    runs-on: self-hosted
-    steps:
-      - uses: actions/checkout@v1
-      - name: build packages
-        run: make all
-
-jobs:
 
   build:
     runs-on: [ubuntu-latest, self-hosted]
