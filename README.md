@@ -1,5 +1,8 @@
 # github-action-self-hosted
 
+[![Main](https://github.com/dual-wind/github-action-self-hosted/actions/workflows/main.yml/badge.svg)](https://github.com/dual-wind/github-action-self-hosted/actions/workflows/main.yml)
+[![Package](https://github.com/dual-wind/github-action-self-hosted/actions/workflows/package.yml/badge.svg)](https://github.com/dual-wind/github-action-self-hosted/actions/workflows/package.yml)
+
 ## References
 
 - <https://github.com/pypa/cibuildwheel/issues/598>
