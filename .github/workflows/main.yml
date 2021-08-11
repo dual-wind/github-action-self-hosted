@@ -1,0 +1,20 @@
+name: Main
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  show-env-context:
+    runs-on: ubuntu-latest
+    container: node:16
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Environment context
+        run: |
+          node -v
+          npm -v
+          yarn -v
