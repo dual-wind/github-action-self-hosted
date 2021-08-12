@@ -19,8 +19,9 @@ jobs:
           npm -v
           yarn -v
 
-  slackNotification:
+  slack-notification:
     name: Slack Notification Demo
+    needs: [show-env-context]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
