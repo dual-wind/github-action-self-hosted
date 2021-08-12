@@ -61,8 +61,9 @@ jobs:
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
         
-  slackNotification:
+  slack-notification:
     name: Slack Notification Demo
+    needs: [build]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
